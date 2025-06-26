@@ -18,7 +18,7 @@
     "date-fns": "^4.1.0",
     "flowbite": "^3.1.2",
     "framer-motion": "^12.18.1",
-    "gh-pages": "^6.2.0",
+    "gh-pages": "^6.3.0",
     "http-proxy-middleware": "^3.0.0",
     "kovais-web": "file:",
     "mdb-react-ui-kit": "^9.0.0",
@@ -39,7 +39,7 @@
     "three": "^0.150.1",
     "web-vitals": "^4.2.2"
   },
-  "homepage": "https://github.com/Manikandan0018/KovaisApparment.git",
+  "homepage": "https://Manikandan0018.github.io/KovaisApparment",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

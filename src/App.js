@@ -20,12 +20,12 @@ import Spa from './spa/spa';
 import Hotel from './RoomSearch/RoomSearch';
 import SearchResults from './RoomSearch/SearchResults';
 import Gym from './gym/gym';
-import Signup from './components/Signup';
-import Login from './components/Login';
-import Home from './components/Home';
-import ScrollToTop from './ScrollToTop';
+import Signup from './components/Signup.js';
+import Login from './components/Login.js';
+import Home from './components/Home.js';
+import ScrollToTop from './ScrollToTop.js';
 import Header from './components/Header.js';
-import About from './components/About/About';
+import About from './components/About/About.js';
 import Profile from './components/Profile';
 import ServiceInfo from './barber/ServiceInfo';
 import BookedOrders from './components/BookedOrders';
@@ -97,11 +97,9 @@ const App = () => {
        }
 
       <Routes>
-        <Route path="/" element={<Navigate replace to="/home" />} />
         <Route path="/signup" element={<Signup setUser={handleLogin} />} />
         <Route path="/login" element={<Login setUser={handleLogin} />} />
-{/* user={user} setUser={setUser} */}
-        <Route path="/home" element={<Home user={user} setUser={setUser}/>} />
+        <Route path="/" element={<Home user={user} setUser={setUser}/>} />
         
         <Route path="/barber" element={<Barber user={user} setUser={setUser}/>} />
         <Route path="/spa" element={<Spa user={user} setUser={setUser}/>} />

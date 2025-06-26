@@ -1,0 +1,144 @@
+/* Signup.css */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #38b2ac, #4299e1);
+    padding: 20px;
+  }
+  
+  .signup-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .signup-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .signup-title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #2d3748;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .signup-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+  }
+  
+  .signup-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .signup-input:focus {
+    border-color: #38b2ac;
+    box-shadow: 0 0 5px rgba(56, 178, 172, 0.5);
+  }
+  
+  .error-message {
+    font-size: 12px;
+    color: red;
+    margin-top: 4px;
+  }
+  
+  .signup-button {
+    background: #38b2ac;
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: none;
+    font-size: 16px;
+  }
+  
+  .signup-button:hover {
+    background: #2c7a7b;
+  }
+  
+  .signup-footer {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #4a5568;
+  }
+  
+  .signup-footer a {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .signup-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ====== RESPONSIVE DESIGN ====== */
+  
+  /* Tablets & Small Screens */
+  @media (max-width: 768px) {
+    .signup-card {
+      padding: 25px;
+      width: 90%;
+      max-width: 350px;
+    }
+    
+    .signup-title {
+      font-size: 22px;
+    }
+  
+    .signup-button {
+      font-size: 15px;
+      padding: 10px;
+    }
+  }
+  
+  /* Mobile Devices */
+  @media (max-width: 480px) {
+    .signup-card {
+      padding: 20px;
+      max-width: 90%;
+    }
+    
+    .signup-title {
+      font-size: 20px;
+    }
+  
+    .signup-input {
+      padding: 10px;
+    }
+  
+    .signup-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .signup-footer {
+      font-size: 12px;
+    }
+  }
+  

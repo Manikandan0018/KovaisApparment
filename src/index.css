@@ -1,0 +1,21 @@
+/* index.css
+
+body {
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation Bar Styles */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+

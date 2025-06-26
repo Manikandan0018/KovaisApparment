@@ -1,0 +1,155 @@
+/* General Styles */
+
+
+title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.gym-container {
+  padding: 20px;
+}
+
+.in {
+  width: 100%;
+  max-width: 300px; /* Ensures it doesn’t stretch too much  */
+   padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #ff7eb3, #ff758c);
+  border: 2px solid #ff4f81;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.in::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.in:focus {
+  background: linear-gradient(45deg, #ff758c, #ff4f81);
+  border: 2px solid #ff2d55;
+  box-shadow: 0px 0px 10px rgba(255, 47, 85, 0.5);
+}
+
+/* Carousel Styling */
+.carousel-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {  /* Tablet */
+  .carousel-section{
+    max-height: 200px;
+  }
+  .carousel-img {
+    height: 300px; /* Adjust for tablets */
+  }
+}
+
+@media (max-width: 480px) {  /* Mobile */
+  .carousel-img {
+    height: 200px; /* Smaller height for mobile */
+  }
+}
+
+
+/* Card Selection Styles */
+.selection-card {
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.selection-card:hover,
+.selection-card.selected {
+  border-color: #28a745;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.selection-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.selection-card .card-body {
+  padding: 15px;
+}
+
+/* Gender, Age, and Category Selection */
+.gender-selection, .age-selection {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .gender-selection .col-md-3,
+  .age-selection .col-md-3 {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}
+
+/* Calendar Section */
+.cal {
+  display: flex;
+  justify-content: center;
+}
+
+.react-datepicker {
+  font-size: 1rem;
+  margin-top: 55px;
+}
+
+@media (max-width: 768px) {
+  .react-datepicker {
+    font-size: 0.9rem;
+  }
+}
+
+/* Time Slot Selection */
+.text-center button {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  .text-center button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+/* Payment Modal */
+.modal-body img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.modal-body button {
+  font-size: 1rem;
+  padding: 10px;
+}
+
+@media (max-width: 576px) {
+  .modal-body button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}

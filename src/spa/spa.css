@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #4A90E2; /* Lighter blue for main interactions */
+    --secondary-color: gray; /* Accent color for buttons and headings */
+    --background-color: #F8F9FA; /* Light background */
+    --text-color: #333; /* Primary text color */
+    --dark-background: #343a40; /* Dark background for banners */
+    --button-hover: #007bff; /* Darker blue for button hover */
+    --font-family: 'Roboto', sans-serif; /* Use a modern, clean font */
+  }
+  
+  
+  h1, h3 {
+    color: var(--text-color);
+  }
+  
+  h3 {
+   
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--secondary-color); /* Accent color for subheadings */
+  }
+  h2{
+    text-align: center;
+  }
+  .the-boyz-page{
+    margin-top:30px
+  }
+  
+  
+  
+  .banner, .card {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadows for depth */
+    border-radius: 10px;
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 465px;
+    overflow: hidden;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Dark background for readability */
+    padding: 20px;
+    border-radius: 12px;
+    color: #fff;
+  }
+  
+  .button, .nav-button {
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    
+  }
+  
+  .button:hover, .nav-button:hover {
+    background-color: var(--button-hover);
+  }
+  
+  .nav-button {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+  
+  .selected {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Service Cards */
+  .service-card {
+    border: none;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .cus-input {
+    width: 100%;
+    max-width: 300px; /* Ensures it doesn’t stretch too much */
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+    border: 2px solid #ff4f81;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cus-input::placeholder {
+    color: white;
+    opacity: 0.8;
+  }
+  
+  .cus-input:focus {
+    background: linear-gradient(45deg, #ff758c, #ff4f81);
+    border: 2px solid #ff2d55;
+    box-shadow: 0px 0px 10px rgba(255, 47, 85, 0.5);
+  }  
+
+  .service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-card .card-img-top {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Date and Slot Picker */
+  .date-picker, .time-slot-picker {
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .date-card, .time-slot {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .date-card:hover, .time-slot:hover {
+    background-color: #e1bee7;
+    transform: scale(1.05);
+  }
+  
+  .selected-date, .selected-slot {
+    background-color: #7e57c2;
+    color: #fff;
+  }
+  
+  /* Payment Button */
+  .button {
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #4A90E2, #007bff);
+    border: none;
+  }
+  
+  .button:hover {
+    background: linear-gradient(to right, #003c82, #0056b3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .selected-slot {
+    background-color: #7e57c2;
+    color: white;
+  }
+  
+  .booked-slot {
+    background-color: #d3d3d3;
+    color: white;
+  }
+  
+  /* Additional Styles for Time Slots */
+  .time-slot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .cal{
+    width:45%;
+    margin-bottom:80px;
+  }
+  
+  .service {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 15px;
+  }
+  
+  /* Show description only when hovering over the image */
+  .image-container:hover .popup {
+    opacity: 1;
+  }
+  

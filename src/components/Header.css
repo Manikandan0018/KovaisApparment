@@ -1,0 +1,165 @@
+/* General Button Styles */
+.auth-button {
+    background-color: #007bff; /* Default blue color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+ .header{
+  background-color: whitesmoke;
+ }
+
+  .medal-icon {
+    height: 25px; /* Adjust the size */
+    width: auto;
+    /* margin-right: 8px; Add spacing */
+  }
+  
+  
+  /* Hover Effect */
+  .auth-button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05);
+  }
+  
+  /* Logout Button - Different Color */
+  .logout-button {
+    background-color: #dc3545; /* Red for Logout */
+  }
+  
+  .logout-button:hover {
+    background-color: #a71d2a; /* Darker Red */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .auth-button {
+      font-size: 14px;
+      padding: 10px 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .auth-button {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  }
+  /* Default Dropdown Styling */
+.custom-dropdown .dropdown-menu {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Each dropdown item */
+.dropdown-item-custom {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #454242;
+  transition: background 0.3s ease-in-out;
+}
+
+.dropdown-item-custom:hover {
+  background: #f8f9fa;
+  color: #e63946; /* Highlight color */
+}
+
+/* Icon styling */
+.dropdown-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #e63946;
+}
+
+/* Hover animation for larger screens */
+.custom-dropdown .dropdown-menu {
+  opacity: 0;
+  transform: translateY(5px);
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.custom-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+
+.navbar .dropdown-toggle {
+  color: white !important;
+}
+
+
+/* ==========================
+    MEDIA QUERIES (Responsive)
+========================== */
+
+/* Tablets & Small Screens */
+@media (max-width: 992px) {
+  .dropdown-item-custom {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .dropdown-icon {
+    font-size: 16px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .custom-dropdown {
+    width: 100%;
+    text-align: center;
+  }
+
+  .custom-dropdown .dropdown-menu {
+    color: white !important;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    position: relative; /* Ensures it doesn’t overlap */
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .dropdown-item-custom {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .dropdown-icon {
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 576px) {
+  .dropdown-item-custom {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .dropdown-icon {
+    font-size: 12px;
+  }
+}
+
+.navbar .custom-dropdown .dropdown-toggle {
+  color: white !important;
+}

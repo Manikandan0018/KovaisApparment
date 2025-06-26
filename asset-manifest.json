@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KovaisApparment/static/css/main.779ae7a1.css",
-    "main.js": "/KovaisApparment/static/js/main.6f7ff25d.js",
+    "main.css": "/KovaisApparment/static/css/main.7626233f.css",
+    "main.js": "/KovaisApparment/static/js/main.93c5212d.js",
     "static/js/488.6f342e4d.chunk.js": "/KovaisApparment/static/js/488.6f342e4d.chunk.js",
     "static/media/3.jpg": "/KovaisApparment/static/media/3.e575a07a3ebc42a16703.jpg",
     "static/media/2.jpg": "/KovaisApparment/static/media/2.e86e3f70bd3b6627c0b9.jpg",
@@ -63,12 +63,12 @@
     "static/media/colorm4.jpg": "/KovaisApparment/static/media/colorm4.d81d2c20b034ef494e68.jpg",
     "static/media/Thaimassage.jpg": "/KovaisApparment/static/media/Thaimassage.81eac0cc17578ce7e0b0.jpg",
     "index.html": "/KovaisApparment/index.html",
-    "main.779ae7a1.css.map": "/KovaisApparment/static/css/main.779ae7a1.css.map",
-    "main.6f7ff25d.js.map": "/KovaisApparment/static/js/main.6f7ff25d.js.map",
+    "main.7626233f.css.map": "/KovaisApparment/static/css/main.7626233f.css.map",
+    "main.93c5212d.js.map": "/KovaisApparment/static/js/main.93c5212d.js.map",
     "488.6f342e4d.chunk.js.map": "/KovaisApparment/static/js/488.6f342e4d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.779ae7a1.css",
-    "static/js/main.6f7ff25d.js"
+    "static/css/main.7626233f.css",
+    "static/js/main.93c5212d.js"
   ]
 }

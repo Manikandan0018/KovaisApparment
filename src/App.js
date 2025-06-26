@@ -31,6 +31,7 @@ import ServiceInfo from './barber/ServiceInfo';
 import BookedOrders from './components/BookedOrders';
 import History from './components/History';
 
+// Sub-component to handle routes and layout
 const AppRoutes = ({ user, setUser, handleLogin, handleLogout }) => {
   const location = useLocation();
 
@@ -96,6 +97,7 @@ const AppRoutes = ({ user, setUser, handleLogin, handleLogout }) => {
   );
 };
 
+// Main App component
 const App = () => {
   const [user, setUser] = useState(() => {
     const storedUser = localStorage.getItem('loggedInUser');
@@ -137,7 +139,7 @@ const App = () => {
   }
 
   return (
-    <Router>
+    <Router basename="/KovaisApparment">
       <AppRoutes
         user={user}
         setUser={setUser}

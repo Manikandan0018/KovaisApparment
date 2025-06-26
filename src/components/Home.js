@@ -35,7 +35,7 @@ const images = [banner1,banner2,banner3];
 
 
 
-function Home({ user}) {
+function Home({ user,setUser}) {
 //updated manikandan//
 
 

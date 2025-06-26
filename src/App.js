@@ -9,10 +9,7 @@ import {
   MDBInput
 } from 'mdb-react-ui-kit';
 
-import {
-  MDBIcon,
-  MDBBtn
-} from 'mdb-react-ui-kit';
+
 
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
@@ -103,7 +100,7 @@ const App = () => {
         <Route path="/" element={<Navigate replace to="/home" />} />
         <Route path="/signup" element={<Signup setUser={handleLogin} />} />
         <Route path="/login" element={<Login setUser={handleLogin} />} />
-
+{/* user={user} setUser={setUser} */}
         <Route path="/home" element={<Home user={user} setUser={setUser}/>} />
         
         <Route path="/barber" element={<Barber user={user} setUser={setUser}/>} />

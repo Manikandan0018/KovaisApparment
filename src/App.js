@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import './App.css';
 
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import AOS from 'aos';
 
 import {

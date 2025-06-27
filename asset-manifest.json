@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KovaisApparment/static/css/main.7626233f.css",
-    "main.js": "/KovaisApparment/static/js/main.93c5212d.js",
+    "main.css": "/KovaisApparment/static/css/main.b10f6dee.css",
+    "main.js": "/KovaisApparment/static/js/main.17fd0de9.js",
     "static/js/488.6f342e4d.chunk.js": "/KovaisApparment/static/js/488.6f342e4d.chunk.js",
     "static/media/3.jpg": "/KovaisApparment/static/media/3.e575a07a3ebc42a16703.jpg",
     "static/media/2.jpg": "/KovaisApparment/static/media/2.e86e3f70bd3b6627c0b9.jpg",
@@ -16,6 +16,7 @@
     "static/media/signup-bg.jpg": "/KovaisApparment/static/media/signup-bg.148c92b5ae254d5aea4d.jpg",
     "static/media/s7.jpg": "/KovaisApparment/static/media/s7.3953963835f3ad951381.jpg",
     "static/media/shave3.jpg": "/KovaisApparment/static/media/shave3.58ecadb2de072f30bbed.jpg",
+    "static/media/offer.png": "/KovaisApparment/static/media/offer.28ec1b69d86bc8eee5f6.png",
     "static/media/funerR.jpg": "/KovaisApparment/static/media/funerR.d57019c958e6e06aeab7.jpg",
     "static/media/men1.jpeg": "/KovaisApparment/static/media/men1.1c1d1c6a0135471e6843.jpeg",
     "static/media/hotel.jpg": "/KovaisApparment/static/media/hotel.8980532f17c34e940468.jpg",
@@ -63,12 +64,12 @@
     "static/media/colorm4.jpg": "/KovaisApparment/static/media/colorm4.d81d2c20b034ef494e68.jpg",
     "static/media/Thaimassage.jpg": "/KovaisApparment/static/media/Thaimassage.81eac0cc17578ce7e0b0.jpg",
     "index.html": "/KovaisApparment/index.html",
-    "main.7626233f.css.map": "/KovaisApparment/static/css/main.7626233f.css.map",
-    "main.93c5212d.js.map": "/KovaisApparment/static/js/main.93c5212d.js.map",
+    "main.b10f6dee.css.map": "/KovaisApparment/static/css/main.b10f6dee.css.map",
+    "main.17fd0de9.js.map": "/KovaisApparment/static/js/main.17fd0de9.js.map",
     "488.6f342e4d.chunk.js.map": "/KovaisApparment/static/js/488.6f342e4d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7626233f.css",
-    "static/js/main.93c5212d.js"
+    "static/css/main.b10f6dee.css",
+    "static/js/main.17fd0de9.js"
   ]
 }

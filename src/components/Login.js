@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import "./Login.css"; // Import external CSS
 import signUpBgImg from './Image/signup-bg.jpg'
+import { Link } from 'react-router-dom';
 
 function Login() {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -61,7 +62,7 @@ function Login() {
           <div className="p-10">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Login your Account</h2>
             <p className="text-sm text-gray-600 mb-6">
-              Don't have an account? <a href="/signup" className="text-blue-500">Create Account here</a>.
+              Don't have an account? <Link to="/signup" className="text-blue-500">Create Account here</Link>.
             </p>
   
             <form onSubmit={handleSubmit(Login)} className="space-y-5">

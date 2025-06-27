@@ -2,35 +2,39 @@ import React, { useEffect } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaCheckCircle } from "react-icons/fa";
 import spa from "./spa.jpg";
 import gym from "./gym.jpg";
 import hotel from "./hotel.jpg";
 import barber from "./barber.jpg";
-import "./About.css"; // Import your CSS file
-import { FaCheckCircle } from "react-icons/fa"; // Importing an icon for list items
-
+import offer from "../Image/offer.png";
+import "./About.css";
 
 function About() {
   const aboutImg = [
     {
       img: hotel,
       title: "Luxury AC Room",
-      description: "hotel, building that provides lodging, meals, and other services to the traveling public on a commercial basis. A motel performs the same functions as a hotel but in a format designed for travelers using automobiles.",
+      description:
+        "Elegant rooms with modern amenities and 24/7 comfort to make your stay extraordinary.",
     },
     {
       img: spa,
-      title:"Spa",
-      description: "A spa is an oasis of calm where people actively do something for the relaxation of body, mind, and spirit. This is achieved through treatments (message, beauty) as well as through fitness equipment for the body, through meditation or relaxation.",
+      title: "Tranquil Spa",
+      description:
+        "Relax, refresh, and rejuvenate with soothing massages and holistic treatments.",
     },
     {
       img: gym,
       title: "Modern Gym",
-      description: "A gym is a large room, usually containing special equipment, where people go to do physical exercise and get fit. The gym has exercise bikes and running machines. While some guests play golf, others work out in the hotel gym. ",
+      description:
+        "State-of-the-art fitness space equipped with everything you need to stay in shape.",
     },
     {
       img: barber,
-      title: "Barber Shop",
-      description: "A salon is a gathering of people held by a host. These gatherings often consciously followed Horace's definition of the aims of poetry, either to please or to educate (Latin: aut delectare aut prodesse).",
+      title: "Barber Lounge",
+      description:
+        "Get groomed in style with professional care and a welcoming atmosphere.",
     },
   ];
 
@@ -39,66 +43,42 @@ function About() {
   }, []);
 
   return (
-    <>
-    <Container className="about-container mt-5">
-      <Row className="justify-content-center">
-        {/* Left Column - About Text */}
-        <Col md={6} className="about-text">
-          <h2 className="section-title">Welcome to <span>Kovais</span></h2>
-          <p className="section-description">
-            Your go-to platform for seamless pre-booking of premium services, including gyms, salons, spas, and hotels. 
-            Our mission is to provide a hassle-free booking experience, ensuring convenience and efficiency for both customers and service providers.
-          </p>
-          <p className="section-description">
-            At Kovais, we believe in enhancing user experience through a well-structured and easy-to-use platform. 
-            Whether you're looking to schedule a fitness session, book a relaxing spa treatment, 
-            reserve a salon appointment, or secure a hotel stay, Kovais makes it effortless with just a few clicks.
-          </p>
-        </Col>
+    <div className="bg-black text-white font-space">
+      <Container className="py-5">
+        <Row className="align-items-center g-4">
+          <Col md={6} className="position-relative">
+            <div className="about-left-image-wrapper">
+              <img src={hotel} alt="Hotel" className="about-left-image" />
+            </div>
+          </Col>
 
-        {/* Right Column - Benefits List */}
-        <Col md={5} className="about-list">
-          {/* <ul> */}
-            {/* <li> */}
-              <p><FaCheckCircle className="icon" /> <strong>Easy & Fast Booking</strong> - Reserve your favorite services anytime, anywhere.</p>
-              {/* </li> */}
-            {/* <li> */}
-              <p><FaCheckCircle className="icon" /> <strong>Exclusive Offers</strong> - Access special discounts and promotions.</p>
-              {/* </li> */}
-            {/* <li> */}
-              <p><FaCheckCircle className="icon" /> <strong>Reliable & Secure</strong> - Trusted platform ensuring secure transactions.</p>
-              {/* </li> */}
-            {/* <li> */}
-              <p><FaCheckCircle className="icon" /> <strong>Customer-Centric Approach</strong> - Prioritizing your convenience and satisfaction.</p>
-              {/* </li> */}
-            {/* <li> */}
-             <p> <FaCheckCircle className="icon" /> <strong>Join us today</strong> and experience a smarter way to book your favorite services!
-              </p>
-              {/* </li> */}
-          {/* </ul> */}
-        </Col>
-      </Row>
-    </Container>
+          <Col md={6}>
+            <img src={offer} alt="Special Offers" className="w-100 rounded shadow-lg" data-aos="fade-left" />
+          </Col>
+        </Row>
 
-      <Container className="about-container">
-        <h2 className="text-center my-4">About Us</h2>
-        <Row className="justify-content-center">
+        <h3 className="text-center text-white mt-5 text-2xl md:text-3xl mb-4">Explore Our Services</h3>
+        <Row className="g-4">
           {aboutImg.map((item, index) => (
-            <Col md={6} lg={4} xl={3} key={index} className="mb-4">
-              <Card className="about-card" data-aos="fade-up">
-                <div className="image-container">
-                  <Card.Img variant="top" src={item.img} className="card-image" />
-                  <div className="overlay">
-                    <h4>{item.title}</h4>
-                    <p>{item.description}</p>
-                  </div>
+            <Col md={6} lg={3} key={index}>
+              <Card className="bg-dark text-white shadow-md border-0 rounded-xl overflow-hidden h-100" data-aos="zoom-in">
+                <div className="relative h-52 overflow-hidden">
+                  <Card.Img
+                    src={item.img}
+                    className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+                    alt={item.title}
+                  />
                 </div>
+                <Card.Body>
+                  <Card.Title className="text-lg font-bold">{item.title}</Card.Title>
+                  <Card.Text className="text-sm text-gray-400">{item.description}</Card.Text>
+                </Card.Body>
               </Card>
             </Col>
           ))}
         </Row>
       </Container>
-    </>
+    </div>
   );
 }
 

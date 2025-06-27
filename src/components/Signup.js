@@ -3,12 +3,15 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import "./Signup.css"; 
+import { Link } from 'react-router-dom';
+
 import signUpBgImg from './Image/signup-bg.jpg'
 function Signup() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
 
   const signUp = async (formData) => {
+    console.log(formData)
     try {
       const formattedData = {
         name: formData.username,
@@ -35,7 +38,7 @@ function Signup() {
 
     } catch (error) {
       console.error("Signup Error:", error.response ? error.response.data : error.message);
-      alert(error.response?.data?.error || "Sign-Up Failed. Please try again.");
+      // alert(error.response?.data?.error || "Sign-Up Failed. Please try again.");
     }
   };
 
@@ -47,10 +50,11 @@ function Signup() {
         <div className="p-10">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Create your Account</h2>
           <p className="text-sm text-gray-600 mb-6">
-            Start your journey in seconds. Already have an account? <a href="/login" className="text-blue-500">Login here</a>.
+            Start your journey in seconds. Already have an account? <Link to="/login" className="text-blue-500">login here</Link>
+
           </p>
 
-          <form onSubmit={handleSubmit(signUp)} className="space-y-5">
+          <form onSubmit={signUp()} className="space-y-5">
             <div>
               <label className="block text-sm mb-1">Full Name</label>
               <input
